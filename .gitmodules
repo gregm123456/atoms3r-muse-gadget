@@ -1,0 +1,4 @@
+[submodule "muse-gadget-sdk"]
+	path = muse-gadget-sdk
+	url = https://github.com/gregm123456/muse-gadget-sdk.git
+	branch = atoms3r-port

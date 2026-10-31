@@ -1,0 +1,37 @@
+# Local Python environment and caches
+/venv/
+/.venv/
+__pycache__/
+*.py[cod]
+
+# Machine and editor state
+.DS_Store
+Thumbs.db
+/.vscode/
+
+# Build output
+/build/
+/build-*/
+**/build/
+**/build-*/
+**/managed_components/
+
+# Local firmware backup
+/atoms3r-factory.bin
+/backups/
+
+# Personal build notes; keep local, do not publish
+/AtomS3R-Muse-Gadget-Plan.md
+/BUILD-LOG.md
+/notes/
+
+# Credentials and private key material
+.env
+.env.*
+!.env.example
+*.secret
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
