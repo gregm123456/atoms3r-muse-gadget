@@ -50,7 +50,23 @@ configuration or backups.
 
 ## License
 
-Original project files in this repository are offered under the MIT License;
-see [LICENSE](LICENSE). The Muse Gadget SDK and other third-party material are
-not relicensed by this project: retain their original licenses, copyright
-notices, and attribution requirements when including or distributing them.
+Original project files in this repository (the README and the sketches) are
+offered under the MIT License; see [LICENSE](LICENSE). The Muse Gadget SDK and
+other third-party material are not relicensed by this project: retain their
+original licenses, copyright notices, and attribution requirements when
+including or distributing them.
+
+## Credits and third-party licenses
+
+- **[Muse Gadget SDK](https://github.com/facebookincubator/muse-gadget-sdk)**,
+  Copyright (c) Meta Platforms, Inc. and affiliates, Apache License 2.0. The
+  `muse-gadget-sdk/` submodule is a fork of it; its `LICENSE`, file headers and
+  third-party license table (in its README) apply to everything in it, including
+  my AtomS3R board port, which keeps the Apache-2.0 header so it fits the SDK.
+- **[M5GFX](https://github.com/m5stack/M5GFX) and
+  [M5Unified](https://github.com/m5stack/M5Unified)**, MIT License,
+  Copyright (c) 2021 M5Stack. The AtomS3R board port's ST7735S init sequence and
+  panel, backlight and audio-codec values are adapted from them, and the probe
+  sketch uses them. The MIT notice is kept in the board file's header.
+- This is an independent project, not affiliated with or endorsed by Meta or
+  M5Stack. Product and company names belong to their owners.
