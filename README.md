@@ -68,5 +68,9 @@ including or distributing them.
   Copyright (c) 2021 M5Stack. The AtomS3R board port's ST7735S init sequence and
   panel, backlight and audio-codec values are adapted from them, and the probe
   sketch uses them. The MIT notice is kept in the board file's header.
+- **[Bosch Sensortec BMI270_SensorAPI](https://github.com/boschsensortec/BMI270_SensorAPI)**,
+  BSD-3-Clause, Copyright (c) 2023 Bosch Sensortec GmbH. The BMI270 motion
+  sensor's configuration blob (`atoms3r_bmi270_config.h` in the SDK fork) comes
+  from it, with its notice in the file.
 - This is an independent project, not affiliated with or endorsed by Meta or
   M5Stack. Product and company names belong to their owners.
