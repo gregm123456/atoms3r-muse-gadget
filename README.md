@@ -41,6 +41,30 @@ token into source, or publish a firmware build containing a personal token.
 Review the [Muse Gadget SDK Terms](https://gadgets.muse.ai/sdk-terms) before
 pairing a device.
 
+## What works (tested on one unit)
+
+| Feature | Status |
+|---|---|
+| ST7735 128×128 display, backlight, custom pixel avatar | Verified |
+| BLE pairing, Wi-Fi setup, reconnect after reboot | Verified |
+| Voice notes (hold the button; reply is text) | Verified |
+| Live voice calls (tap to start or end; reply audio in your Muse voice) | Verified |
+| Home-network tunnel and device discovery through Muse | Verified |
+| `sensors.read`: BMI270 accelerometer, gyroscope, die temperature, plus orientation, moving and last-shake | Verified |
+| Shake hangs up a call; face-down and still for 5 s sleeps the screen (`CONFIG_HOMEHUB_ATOMS3R_GESTURES`) | Verified |
+| Menu: volume, speaker, brightness, mic gain, auto-sleep, phone setup | Verified, bench screenshots |
+| Wi-Fi OTA updates | Enabled, **not tested**; use USB |
+| BMM150 compass, phone-camera video, IR | Not implemented |
+
+The single screen button does everything: tap = start or end a call, hold =
+voice note, double-tap = menu (in the menu, tap = next item, hold = select).
+The screen wakes only on a button press; the button can't wake the chip from
+deep sleep, so the device sleeps the screen instead. The die temperature runs
+warm and is not room temperature.
+
+Memory is tight (about 28 KB free internal RAM when idle). A short soak of six
+chat round trips showed no change in free memory; there has been no multi-hour soak.
+
 ## Local files and secrets
 
 The root `.gitignore` excludes local environments, build output, the factory
