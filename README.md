@@ -59,6 +59,8 @@ pairing a device.
 
 The single screen button does everything: tap = start or end a call, hold =
 voice note, double-tap = menu (in the menu, tap = next item, hold = select).
+Calls end after 30 minutes with no speech/audio, or after 2 hours total; the
+Muse server may impose a shorter idle limit.
 The screen wakes only on a button press; the button can't wake the chip from
 deep sleep, so the device sleeps the screen instead. The die temperature runs
 warm and is not room temperature.
