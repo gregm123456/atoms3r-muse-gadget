@@ -51,7 +51,7 @@ pairing a device.
 | Live voice calls (tap to start or end; reply audio in your Muse voice) | Verified |
 | Home-network tunnel and device discovery through Muse | Verified |
 | `sensors.read`: BMI270 accelerometer, gyroscope, die temperature, plus orientation, moving, last-shake and a short in-memory motion history | Verified |
-| Shake hangs up a call; face-down and still for 5 s sleeps the screen (`CONFIG_HOMEHUB_ATOMS3R_GESTURES`) | Verified |
+| Shake continuously for about 2 s to hang up a call; face-down and still for 5 s sleeps the screen (`CONFIG_HOMEHUB_ATOMS3R_GESTURES`) | Implemented; 2 s threshold not yet hardware-tested |
 | Muse can show pictures on the screen (`display.draw_file` from Muse's files, any source; `display.draw_url` direct HTTPS works for some hosts only) | Verified |
 | Menu: volume, speaker, brightness, mic gain, auto-sleep, phone setup | Verified, bench screenshots |
 | Wi-Fi OTA updates | Enabled, **not tested**; use USB |
